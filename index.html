@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godswill — Coffee Barista & Mixologist</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header>
+    <a href="#home" class="logo">GODSWILL</a>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-actions">
+        <a class="btn-outline" href="bookings.html">Book a Session</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#contact">Contact</a>
+    <a class="mobile-nav__cta" href="bookings.html">Book a Session</a>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero" id="home">
+    <div class="hero-left">
+        <p class="eyebrow">Coffee Barista &amp; Mixologist</p>
+        <h1 class="hero-title">
+            <span class="line">Crafting</span>
+            <span class="line">moments</span>
+            <span class="line">in a glass.</span>
+        </h1>
+        <p class="hero-desc">Coffee mocktails, soft drinks &amp; signature beverages — curated with <strong>precision</strong> and soul.</p>
+        <div class="hero-buttons">
+            <a class="btn-solid" href="#menu">Explore Menu</a>
+            <a class="btn-link" href="bookings.html">Book a Session</a>
+        </div>
+    </div>
+    <div class="hero-right">
+        <span class="location-tag">LAGOS, NIGERIA</span>
+        <div class="accent-dot"></div>
+        <img class="hero-img" src="godswill__img.jpeg" alt="Godswill — Beverage Artist">
+    </div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section class="about" id="about">
+    <div class="about__inner">
+        <div class="about__image-wrap">
+            <img class="about__image" src="godswill__abt-img.jpeg" alt="Godswill — Beverage Artist">
+        </div>
+        <div class="about__content">
+            <p class="about__eyebrow">About Godswill</p>
+            <h2 class="about__heading">More than a drink — a full experience.</h2>
+            <p class="about__body">Hi, I'm Godswill. I'm a passionate beverage artist who believes every glass tells a story. From bold cold brews to refreshing mocktails and handcrafted soft drinks, I blend flavors, textures, and aesthetics into something unforgettable.</p>
+            <p class="about__body">Based in Nigeria, I've worked with cafés, events, and private clients to create bespoke beverage experiences that delight the senses. Every recipe is crafted with care — from the first pour to the final garnish.</p>
+            <div class="about__stats">
+                <div class="about__stat">
+                    <p><span class="about__stat-number" data-target="120">0</span><span class="about__stat-suffix">+</span></p>
+                    <small class="about__stat-label">Unique recipes</small>
+                </div>
+                <div class="about__stat">
+                    <p><span class="about__stat-number" data-target="80">0</span><span class="about__stat-suffix">+</span></p>
+                    <small class="about__stat-label">Events served</small>
+                </div>
+                <div class="about__stat">
+                    <p><span class="about__stat-number" data-target="5">0</span><span class="about__stat-suffix">+</span></p>
+                    <small class="about__stat-label">Years experience</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ MENU ══ -->
+<section class="menu" id="menu">
+    <div class="menu__inner">
+        <div class="menu__header">
+            <div>
+                <span class="menu__eyebrow">Signature Drinks</span>
+                <h2 class="menu__heading">Every glass,<br><em>a masterpiece.</em></h2>
+            </div>
+            <div class="menu__tabs">
+                <button class="menu__tab active" data-filter="all">All</button>
+                <button class="menu__tab" data-filter="espresso">Espresso</button>
+                <button class="menu__tab" data-filter="cold-brew">Cold Brew</button>
+                <button class="menu__tab" data-filter="mocktail">Mocktails</button>
+                <button class="menu__tab" data-filter="cocktail">Cocktails</button>
+                <button class="menu__tab" data-filter="milkshake">Milkshakes</button>
+            </div>
+        </div>
+
+        <div class="menu__grid">
+
+            <!-- VISIBLE 6 -->
+            <div class="menu__card" data-category="espresso">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/www.allrecipes.com/b1e3286e087c34523a01ea4de99bcf49d5836d51.jpg" alt="Signature Cappuccino">
+                    <span class="menu__card-badge">Espresso</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Signature Cappuccino</h3>
+                    <p class="menu__card-desc">Double-shot espresso with velvety steamed milk, a thick layer of microfoam, and a dusting of premium cocoa.</p>
+                    <span class="menu__card-type">Espresso Drink</span>
+                </div>
+            </div>
+
+            <div class="menu__card" data-category="cold-brew">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/lifemadesweeter.com/d6162417d051b16b052ced6f27e8d469f00f404c.jpg" alt="Lagos Cold Brew">
+                    <span class="menu__card-badge">Cold Brew</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Lagos Cold Brew</h3>
+                    <p class="menu__card-desc">Slow-steeped Nigerian coffee beans over 18 hours, served over ice with a hint of vanilla. Bold and smooth.</p>
+                    <span class="menu__card-type">Cold Brew</span>
+                </div>
+            </div>
+
+            <div class="menu__card" data-category="mocktail">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/www.pineappleandcoconut.com/6a610efe5f026dc9e043574f1e818a442816005f.jpg" alt="Hibiscus Spritz">
+                    <span class="menu__card-badge">Mocktail</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Hibiscus Spritz</h3>
+                    <p class="menu__card-desc">Zobo-infused sparkling water, fresh ginger, mint, and a squeeze of lime. Refreshing with a bold colour.</p>
+                    <span class="menu__card-type">Mocktail</span>
+                </div>
+            </div>
+
+            <div class="menu__card" data-category="mocktail">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/cleobuttera.com/e0a98fb67e39d43c686e947b7edeb55cf4a8fd62.jpg" alt="Citrus Virgin Mojito">
+                    <span class="menu__card-badge">Mocktail</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Citrus Virgin Mojito</h3>
+                    <p class="menu__card-desc">Fresh-squeezed lime, crushed mint, cane syrup, and sparkling water. The classic mocktail reimagined.</p>
+                    <span class="menu__card-type">Mocktail</span>
+                </div>
+            </div>
+
+            <div class="menu__card" data-category="cocktail">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/images.immediate.co.uk/da394109b8aab84d9883057a2c596c0cb8397058.jpg" alt="Espresso Martini">
+                    <span class="menu__card-badge">Cocktail</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Espresso Martini</h3>
+                    <p class="menu__card-desc">Freshly pulled espresso, vodka, coffee liqueur, and simple syrup. Shaken hard, served cold.</p>
+                    <span class="menu__card-type">Cocktail</span>
+                </div>
+            </div>
+
+            <div class="menu__card" data-category="milkshake">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/bromabakery.com/7079199b1f87a90905cdf508fde7dc223ce16198.jpg" alt="Caramel Dream Shake">
+                    <span class="menu__card-badge">Milkshake</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Caramel Dream Shake</h3>
+                    <p class="menu__card-desc">Rich milkshake topped with whipped cream, caramel drizzle, and a rosemary sprig garnish.</p>
+                    <span class="menu__card-type">Milkshake</span>
+                </div>
+            </div>
+
+            <!-- EXTRA 12 -->
+            <div class="menu__card extra" data-category="espresso">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/athome.starbucks.com/d8d94a4f574e68a003c57104c2156f1141f4320c.jpg" alt="Flat White">
+                    <span class="menu__card-badge">Espresso</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Flat White</h3>
+                    <p class="menu__card-desc">A ristretto-based espresso with silky steamed milk. Strong coffee flavour with a smooth, creamy texture.</p>
+                    <span class="menu__card-type">Espresso Drink</span>
+                </div>
+            </div>
+
+            <div class="menu__card extra" data-category="espresso">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/www.allrecipes.com/638a3e922ad70cc4600bd4cc3a896bd78ed34d11.jpg" alt="Caramel Latte">
+                    <span class="menu__card-badge">Espresso</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Caramel Latte</h3>
+                    <p class="menu__card-desc">House espresso, steamed whole milk, and a generous swirl of house-made caramel sauce.</p>
+                    <span class="menu__card-type">Espresso Drink</span>
+                </div>
+            </div>
+
+            <div class="menu__card extra" data-category="cold-brew">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/foxeslovelemons.com/b423ae5d747757f966047dbac679f7750af4858e.jpg" alt="Salted Cream Cold Brew">
+                    <span class="menu__card-badge">Cold Brew</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Salted Cream Cold Brew</h3>
+                    <p class="menu__card-desc">Cold brew concentrate topped with a cloud of salted sweet cream. A perfect balance of bitter and sweet.</p>
+                    <span class="menu__card-type">Cold Brew</span>
+                </div>
+            </div>
+
+            <div class="menu__card extra" data-category="cold-brew">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/thefirstmess.com/058dfcd5735bceca82ad886ad1d0009d9bafde82.jpg" alt="Coconut Cold Brew">
+                    <span class="menu__card-badge">Cold Brew</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Coconut Cold Brew</h3>
+                    <p class="menu__card-desc">Nigerian cold brew over ice with coconut milk and a drizzle of honey. Tropical, smooth, and satisfying.</p>
+                    <span class="menu__card-type">Cold Brew</span>
+                </div>
+            </div>
+
+            <div class="menu__card extra" data-category="mocktail">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/images.squarespace-cdn.com/135c96d9a638c4979e45ed46a8ee0edb9d3081fe.jpg" alt="Cucumber Mint Cooler">
+                    <span class="menu__card-badge">Mocktail</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Cucumber Mint Cooler</h3>
+                    <p class="menu__card-desc">Sliced cucumber, fresh mint, elderflower cordial, and sparkling water over crushed ice.</p>
+                    <span class="menu__card-type">Mocktail</span>
+                </div>
+            </div>
+
+            <div class="menu__card extra" data-category="mocktail">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/static.wixstatic.com/ea3a39aadfaf0a10787404a217984556fe1517ed.jpeg" alt="Passion Sunset">
+                    <span class="menu__card-badge">Mocktail</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Passion Sunset</h3>
+                    <p class="menu__card-desc">Passion fruit puree layered with orange juice and grenadine for a stunning sunset gradient effect.</p>
+                    <span class="menu__card-type">Mocktail</span>
+                </div>
+            </div>
+
+            <div class="menu__card extra" data-category="cocktail">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/www.liquor.com/17973148220a34ad314be58c0f140f069f04bc05.jpg" alt="Old Fashioned">
+                    <span class="menu__card-badge">Cocktail</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Old Fashioned</h3>
+                    <p class="menu__card-desc">Bourbon, Angostura bitters, sugar cube, and an orange peel twist. The timeless classic, done right.</p>
+                    <span class="menu__card-type">Whiskey Cocktail</span>
+                </div>
+            </div>
+
+            <div class="menu__card extra" data-category="cocktail">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/www.liquor.com/ac16c0443aaae6c8a32647ab31b585bd03bc31e0.jpg" alt="Aperol Spritz">
+                    <span class="menu__card-badge">Cocktail</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Aperol Spritz</h3>
+                    <p class="menu__card-desc">Aperol, prosecco, a splash of soda, and a slice of orange. Light, bitter, and effortlessly Italian.</p>
+                    <span class="menu__card-type">Sparkling Cocktail</span>
+                </div>
+            </div>
+
+            <div class="menu__card extra" data-category="cocktail">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/cdn.apartmenttherapy.info/4a866318a9881f75efe2083beff1731771a756d9" alt="Whiskey Sour">
+                    <span class="menu__card-badge">Cocktail</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Whiskey Sour</h3>
+                    <p class="menu__card-desc">Bourbon, fresh lemon juice, simple syrup, and egg white for a silky foam top. A bold, balanced classic.</p>
+                    <span class="menu__card-type">Whiskey Cocktail</span>
+                </div>
+            </div>
+
+            <div class="menu__card extra" data-category="milkshake">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/www.cookingclassy.com/e32272e75352dcd62d949a38f6f40bbc26b535ce.jpg" alt="Strawberry Cloud">
+                    <span class="menu__card-badge">Milkshake</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Strawberry Cloud</h3>
+                    <p class="menu__card-desc">Fresh strawberries blended with vanilla ice cream, topped with a swirl of whipped cream.</p>
+                    <span class="menu__card-type">Milkshake</span>
+                </div>
+            </div>
+
+            <div class="menu__card extra" data-category="milkshake">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/www.thespruceeats.com/09c47dd7c9f78f3fe51e759e7c1038f42ae5e9fe.jpg" alt="Oreo Crunch Shake">
+                    <span class="menu__card-badge">Milkshake</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Oreo Crunch Shake</h3>
+                    <p class="menu__card-desc">Crushed Oreos blended with vanilla ice cream, drizzled with dark chocolate and cookie crumbles.</p>
+                    <span class="menu__card-type">Milkshake</span>
+                </div>
+            </div>
+
+            <div class="menu__card extra" data-category="milkshake">
+                <div class="menu__card-img-wrap">
+                    <img class="menu__card-img" src="https://kimi-web-img.moonshot.cn/img/cdn.shopify.com/5fda757bc6780af58cd7fbbf8d1aeaeb5a2e764f.jpg" alt="Matcha Shake">
+                    <span class="menu__card-badge">Milkshake</span>
+                </div>
+                <div class="menu__card-body">
+                    <h3 class="menu__card-name">Matcha Dream Shake</h3>
+                    <p class="menu__card-desc">Premium ceremonial matcha blended with vanilla ice cream and oat milk. Earthy, creamy, and beautiful.</p>
+                    <span class="menu__card-type">Milkshake</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="menu__see-more-wrap">
+            <button class="menu__see-more" id="seeMoreBtn">See More Drinks &#8595;</button>
+        </div>
+    </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section class="testimonials" id="testimonials">
+    <div class="testimonials__inner">
+        <div class="testimonials__header">
+            <span class="testimonials__eyebrow">Client Reviews</span>
+            <h2 class="testimonials__heading">What they say about <em>the craft.</em></h2>
+        </div>
+
+        <div class="testimonials__grid">
+            <div class="testimonial__card">
+                <div class="testimonial__stars">★★★★★</div>
+                <p class="testimonial__text">"Godswill served at our wedding and every guest was asking who made the drinks. The Hibiscus Spritz and Espresso Martinis were absolutely incredible. Will book again for every event."</p>
+                <div class="testimonial__author">
+                    <div class="testimonial__avatar">AO</div>
+                    <div>
+                        <span class="testimonial__name">Adaeze Okonkwo</span>
+                        <span class="testimonial__role">Private Client — Lagos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial__card">
+                <div class="testimonial__stars">★★★★★</div>
+                <p class="testimonial__text">"We hired Godswill for our café launch and the cold brew menu he created became our bestsellers overnight. His attention to detail and presentation is on another level."</p>
+                <div class="testimonial__author">
+                    <div class="testimonial__avatar">TM</div>
+                    <div>
+                        <span class="testimonial__name">Tunde Martins</span>
+                        <span class="testimonial__role">Café Owner — Victoria Island</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial__card">
+                <div class="testimonial__stars">★★★★★</div>
+                <p class="testimonial__text">"The Espresso Martini Godswill made was the best I've had — and I've been to bars in London, New York, and Dubai. He genuinely understands flavour at a deep level."</p>
+                <div class="testimonial__author">
+                    <div class="testimonial__avatar">FI</div>
+                    <div>
+                        <span class="testimonial__name">Fatima Ibrahim</span>
+                        <span class="testimonial__role">Corporate Client — Abuja</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section class="contact" id="contact">
+    <div class="contact__inner">
+        <div class="contact__info">
+            <span class="contact__eyebrow">Get in Touch</span>
+            <h2 class="contact__heading">Let's create something <em>unforgettable.</em></h2>
+            <p class="contact__body">Whether it's a private event, a café menu consultation, or a one-off cocktail session — I'd love to hear from you. Reach out and let's make it happen.</p>
+
+            <div class="contact__details">
+                <div class="contact__detail">
+                    <div class="contact__detail-icon">📍</div>
+                    <div>
+                        <span class="contact__detail-label">Location</span>
+                        <span class="contact__detail-value">Lagos, Nigeria</span>
+                    </div>
+                </div>
+                <div class="contact__detail">
+                    <div class="contact__detail-icon">📞</div>
+                    <div>
+                        <span class="contact__detail-label">Phone</span>
+                        <span class="contact__detail-value">+234 801 234 5678</span>
+                    </div>
+                </div>
+                <div class="contact__detail">
+                    <div class="contact__detail-icon">✉️</div>
+                    <div>
+                        <span class="contact__detail-label">Email</span>
+                        <span class="contact__detail-value">godswill@beverageartist.ng</span>
+                    </div>
+                </div>
+                <div class="contact__detail">
+                    <div class="contact__detail-icon">🕐</div>
+                    <div>
+                        <span class="contact__detail-label">Availability</span>
+                        <span class="contact__detail-value">Mon – Sat, 9am – 9pm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact__cta">
+            <span class="contact__cta-eyebrow">Ready when you are</span>
+            <h3 class="contact__cta-title">Book a session with Godswill</h3>
+            <p class="contact__cta-text">Pick a date, choose your setup and add any extras. It takes about two minutes.</p>
+            <a class="btn-solid contact__cta-btn" href="bookings.html">Book a Session</a>
+        </div>
+    </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+    <div class="footer__top">
+        <div class="footer__brand">
+            <a href="#home" class="footer__logo">GODSWILL</a>
+            <p class="footer__tagline">Coffee barista & mixologist based in Lagos, Nigeria. Crafting unforgettable beverage experiences since 2019.</p>
+            <div class="footer__socials">
+                <!-- Instagram -->
+                <a href="#" class="footer__social" aria-label="Instagram">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+                    </svg>
+                </a>
+                <!-- TikTok -->
+                <a href="#" class="footer__social" aria-label="TikTok">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.73a8.17 8.17 0 0 0 4.77 1.52V6.8a4.85 4.85 0 0 1-1-.11z"/>
+                    </svg>
+                </a>
+                <!-- Twitter/X -->
+                <a href="#" class="footer__social" aria-label="Twitter">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <!-- WhatsApp -->
+                <a href="#" class="footer__social" aria-label="WhatsApp">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer__col">
+            <h4>Navigate</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__col">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="bookings.html">Book a Session</a></li>
+                <li><a href="#contact">Private Events</a></li>
+                <li><a href="#contact">Wedding Catering</a></li>
+                <li><a href="#contact">Café Consultation</a></li>
+                <li><a href="#contact">Cocktail Classes</a></li>
+                <li><a href="#contact">Corporate Events</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__col">
+            <h4>Drinks</h4>
+            <ul>
+                <li><a href="#menu">Espresso Drinks</a></li>
+                <li><a href="#menu">Cold Brews</a></li>
+                <li><a href="#menu">Mocktails</a></li>
+                <li><a href="#menu">Cocktails</a></li>
+                <li><a href="#menu">Milkshakes</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <p>&copy; 2026 Godswill — Beverage Artist. All rights reserved.</p>
+        <div class="footer__terms">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+
+</body>
+</html>

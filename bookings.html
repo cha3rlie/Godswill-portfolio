@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session — Godswill, Coffee Barista &amp; Mixologist</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- ══ HEADER (same as home) ══ -->
+<header>
+    <a href="index.html#home" class="logo">GODSWILL</a>
+    <nav>
+        <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="index.html#testimonials">Reviews</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-actions">
+        <a class="btn-outline current" href="bookings.html" aria-current="page">Book a Session</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+    <a href="index.html#home">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#menu">Menu</a>
+    <a href="index.html#testimonials">Reviews</a>
+    <a href="index.html#contact">Contact</a>
+    <a class="mobile-nav__cta" href="bookings.html">Book a Session</a>
+</nav>
+
+<!-- ══ HERO ══ -->
+<div class="res-hero">
+    <div class="embers" id="embers"></div>
+    <div class="ring ring-1"></div>
+    <div class="ring ring-2"></div>
+    <div class="ring ring-3"></div>
+    <div class="ring ring-4"></div>
+
+    <span class="hero-tag"><i class="ti ti-calendar-event"></i> Book a Session</span>
+    <h1>Reserve your<br><em>moment in a glass.</em></h1>
+    <p>Private events, weddings, café consultations or a cocktail masterclass — tell me what you have in mind and let's lock in the date.</p>
+
+    <div class="hero-pills">
+        <span class="hero-pill"><i class="ti ti-clock"></i> Mon–Sat, 9am–9pm</span>
+        <span class="hero-pill"><i class="ti ti-map-pin"></i> Lagos, Nigeria</span>
+        <span class="hero-pill"><i class="ti ti-users"></i> Groups up to 50</span>
+        <span class="hero-pill"><i class="ti ti-phone"></i> +234 801 234 5678</span>
+    </div>
+</div>
+
+<!-- ══ STEPPER ══ -->
+<div class="stepper-wrap">
+    <div class="stepper">
+        <div class="step active" id="s1"><div class="step-num" id="sn1">1</div><div class="step-label">Details</div></div>
+        <div class="step" id="s2"><div class="step-num" id="sn2">2</div><div class="step-label">Date &amp; Time</div></div>
+        <div class="step" id="s3"><div class="step-num" id="sn3">3</div><div class="step-label">Extras</div></div>
+        <div class="step" id="s4"><div class="step-num" id="sn4">4</div><div class="step-label">Confirm</div></div>
+    </div>
+</div>
+
+<!-- ══ MAIN BODY ══ -->
+<div class="res-body">
+
+    <div class="form-col">
+
+        <!-- SUCCESS -->
+        <div class="success-screen panel-card" id="successScreen">
+            <div style="padding:60px 40px;">
+                <div class="success-icon">✓</div>
+                <h2>You're <em>booked!</em></h2>
+                <p>Your session request is in. I'll confirm the details with you shortly. Can't wait to craft something unforgettable.</p>
+                <div class="success-ref" id="refCode">GW-000000</div>
+                <p style="font-size:12.5px;margin-bottom:1.6rem;">Save this reference number — you'll need it when we confirm.</p>
+                <div class="success-actions">
+                    <button class="btn-next" onclick="location.reload()"><i class="ti ti-calendar-plus"></i> New Booking</button>
+                    <button class="btn-back" onclick="window.print()"><i class="ti ti-printer"></i> Print</button>
+                    <a class="btn-back" href="index.html" style="text-decoration:none;"><i class="ti ti-home"></i> Back Home</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 1 -->
+        <div class="form-panel active" id="panel1">
+            <div class="panel-card">
+                <div class="panel-head">
+                    <div class="panel-icon"><i class="ti ti-user"></i></div>
+                    <div><h2>Your Details</h2><p>Tell me who I'll be serving</p></div>
+                </div>
+                <div class="panel-body">
+                    <div class="field-row">
+                        <div class="field-group">
+                            <label for="fname">First Name</label>
+                            <div class="input-wrap">
+                                <input type="text" id="fname" placeholder="e.g. Amara" autocomplete="given-name">
+                                <i class="ti ti-user input-icon"></i>
+                            </div>
+                            <div class="field-error" id="e-fname">Please enter your first name.</div>
+                        </div>
+                        <div class="field-group">
+                            <label for="lname">Last Name</label>
+                            <div class="input-wrap">
+                                <input type="text" id="lname" placeholder="e.g. Kalu" autocomplete="family-name">
+                                <i class="ti ti-user input-icon"></i>
+                            </div>
+                            <div class="field-error" id="e-lname">Please enter your last name.</div>
+                        </div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-group">
+                            <label for="email">Email Address</label>
+                            <div class="input-wrap">
+                                <input type="email" id="email" placeholder="you@example.com" autocomplete="email">
+                                <i class="ti ti-mail input-icon"></i>
+                            </div>
+                            <div class="field-error" id="e-email">Please enter a valid email.</div>
+                        </div>
+                        <div class="field-group">
+                            <label for="phone">Phone Number</label>
+                            <div class="input-wrap">
+                                <input type="tel" id="phone" placeholder="+234 801 234 5678" autocomplete="tel">
+                                <i class="ti ti-phone input-icon"></i>
+                            </div>
+                            <div class="field-error" id="e-phone">Please enter your phone number.</div>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label>Number of Guests</label>
+                        <div class="counter">
+                            <button type="button" class="counter-btn" onclick="changeGuests(-1)" aria-label="Fewer guests">−</button>
+                            <div class="counter-val" id="guestVal">2</div>
+                            <button type="button" class="counter-btn" onclick="changeGuests(1)" aria-label="More guests">+</button>
+                        </div>
+                        <p class="field-hint">Max 50 guests. For larger events, call or use the contact form.</p>
+                    </div>
+
+                    <div class="field-group" style="margin-bottom:0;">
+                        <label>Occasion</label>
+                        <div class="occasion-chips" id="occasionChips">
+                            <div class="chip sel-chip" data-val="casual" onclick="selectChip(this)"><i class="ti ti-coffee"></i> Casual</div>
+                            <div class="chip" data-val="birthday"  onclick="selectChip(this)"><i class="ti ti-cake"></i> Birthday</div>
+                            <div class="chip" data-val="date"      onclick="selectChip(this)"><i class="ti ti-heart"></i> Date Night</div>
+                            <div class="chip" data-val="corporate" onclick="selectChip(this)"><i class="ti ti-briefcase"></i> Corporate</div>
+                            <div class="chip" data-val="wedding"   onclick="selectChip(this)"><i class="ti ti-rings-wedding"></i> Wedding</div>
+                            <div class="chip" data-val="other"     onclick="selectChip(this)"><i class="ti ti-dots"></i> Other</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-nav">
+                <div></div>
+                <button class="btn-next" onclick="goStep(2)">Date &amp; Time <i class="ti ti-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="form-panel" id="panel2">
+            <div class="panel-card">
+                <div class="panel-head">
+                    <div class="panel-icon"><i class="ti ti-calendar"></i></div>
+                    <div><h2>Date &amp; Time</h2><p>Choose when you'd like the session</p></div>
+                </div>
+                <div class="panel-body">
+                    <div class="field-row">
+                        <div class="field-group">
+                            <label for="resDate">Preferred Date</label>
+                            <div class="input-wrap">
+                                <input type="date" id="resDate">
+                                <i class="ti ti-calendar input-icon"></i>
+                            </div>
+                            <div class="field-error" id="e-date">Please select a date.</div>
+                        </div>
+                        <div class="field-group">
+                            <label for="seating">Setup</label>
+                            <div class="input-wrap">
+                                <select id="seating">
+                                    <option value="">Choose a setup…</option>
+                                    <option value="venue">At my venue — Godswill comes to you</option>
+                                    <option value="cafe">At a café — Menu consultation</option>
+                                    <option value="home">Private home — Intimate session</option>
+                                    <option value="outdoor">Outdoor — Garden or terrace</option>
+                                    <option value="bar">Bar counter — Cocktail masterclass</option>
+                                </select>
+                                <i class="ti ti-armchair input-icon"></i>
+                            </div>
+                            <div class="field-error" id="e-seating">Please choose a setup.</div>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label>Available Time Slots</label>
+                        <div class="time-grid" id="timeGrid">
+                            <div class="time-slot" data-time="11:00" onclick="selectTime(this)">11:00 AM<span class="slot-avail">7 left</span></div>
+                            <div class="time-slot" data-time="11:30" onclick="selectTime(this)">11:30 AM<span class="slot-avail">9 left</span></div>
+                            <div class="time-slot unavailable" data-time="12:00">12:00 PM<span class="slot-avail">Full</span></div>
+                            <div class="time-slot" data-time="12:30" onclick="selectTime(this)">12:30 PM<span class="slot-avail">3 left</span></div>
+                            <div class="time-slot" data-time="13:00" onclick="selectTime(this)">1:00 PM<span class="slot-avail">6 left</span></div>
+                            <div class="time-slot unavailable" data-time="13:30">1:30 PM<span class="slot-avail">Full</span></div>
+                            <div class="time-slot" data-time="14:00" onclick="selectTime(this)">2:00 PM<span class="slot-avail">8 left</span></div>
+                            <div class="time-slot" data-time="14:30" onclick="selectTime(this)">2:30 PM<span class="slot-avail">5 left</span></div>
+                            <div class="time-slot" data-time="18:00" onclick="selectTime(this)">6:00 PM<span class="slot-avail">4 left</span></div>
+                            <div class="time-slot" data-time="18:30" onclick="selectTime(this)">6:30 PM<span class="slot-avail">7 left</span></div>
+                            <div class="time-slot unavailable" data-time="19:00">7:00 PM<span class="slot-avail">Full</span></div>
+                            <div class="time-slot" data-time="19:30" onclick="selectTime(this)">7:30 PM<span class="slot-avail">2 left</span></div>
+                            <div class="time-slot" data-time="20:00" onclick="selectTime(this)">8:00 PM<span class="slot-avail">5 left</span></div>
+                            <div class="time-slot" data-time="20:30" onclick="selectTime(this)">8:30 PM<span class="slot-avail">6 left</span></div>
+                            <div class="time-slot" data-time="21:00" onclick="selectTime(this)">9:00 PM<span class="slot-avail">8 left</span></div>
+                        </div>
+                        <div class="field-error" id="e-time">Please select a time slot.</div>
+                    </div>
+
+                    <div class="field-group" style="margin-bottom:0;">
+                        <label for="duration">Duration</label>
+                        <div class="input-wrap">
+                            <select id="duration">
+                                <option value="1.5">1.5 hours (Standard)</option>
+                                <option value="2" selected>2 hours (Recommended)</option>
+                                <option value="3">3 hours (Leisurely)</option>
+                                <option value="4">4 hours (Event)</option>
+                            </select>
+                            <i class="ti ti-hourglass input-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-nav">
+                <button class="btn-back" onclick="goStep(1)"><i class="ti ti-arrow-left"></i> Back</button>
+                <button class="btn-next" onclick="goStep(3)">Extras <i class="ti ti-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="form-panel" id="panel3">
+            <div class="panel-card">
+                <div class="panel-head">
+                    <div class="panel-icon"><i class="ti ti-star"></i></div>
+                    <div><h2>Extras &amp; Add-ons</h2><p>Make the session truly special</p></div>
+                </div>
+                <div class="panel-body">
+                    <div class="field-group">
+                        <label>Add-on Experiences</label>
+                        <div class="addons-grid" id="addonsGrid">
+                            <div class="addon-card" data-price="5000" data-name="Welcome Drinks" onclick="toggleAddon(this)">
+                                <div class="addon-check">✓</div>
+                                <div class="addon-info"><strong>🥂 Welcome Drinks</strong><span>Mocktail or cocktail on arrival</span></div>
+                                <div class="addon-price">₦5k</div>
+                            </div>
+                            <div class="addon-card" data-price="8000" data-name="Birthday Decor" onclick="toggleAddon(this)">
+                                <div class="addon-check">✓</div>
+                                <div class="addon-info"><strong>🎂 Birthday Decor</strong><span>Balloons, banner &amp; candles</span></div>
+                                <div class="addon-price">₦8k</div>
+                            </div>
+                            <div class="addon-card" data-price="12000" data-name="Live Music" onclick="toggleAddon(this)">
+                                <div class="addon-check">✓</div>
+                                <div class="addon-info"><strong>🎸 Live Music Set</strong><span>45-min acoustic performance</span></div>
+                                <div class="addon-price">₦12k</div>
+                            </div>
+                            <div class="addon-card" data-price="15000" data-name="Signature Cocktail Menu" onclick="toggleAddon(this)">
+                                <div class="addon-check">✓</div>
+                                <div class="addon-info"><strong>🍸 Custom Drinks Menu</strong><span>A signature menu made for your event</span></div>
+                                <div class="addon-price">₦15k</div>
+                            </div>
+                            <div class="addon-card" data-price="6000" data-name="Photography" onclick="toggleAddon(this)">
+                                <div class="addon-check">✓</div>
+                                <div class="addon-info"><strong>📸 Photography</strong><span>30-min table photography session</span></div>
+                                <div class="addon-price">₦6k</div>
+                            </div>
+                            <div class="addon-card" data-price="3000" data-name="Dessert Platter" onclick="toggleAddon(this)">
+                                <div class="addon-check">✓</div>
+                                <div class="addon-info"><strong>🍮 Dessert Platter</strong><span>Assorted sweets to pair with your drinks</span></div>
+                                <div class="addon-price">₦3k</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="dietary">Dietary Requirements</label>
+                        <div class="input-wrap">
+                            <select id="dietary">
+                                <option value="none">No special requirements</option>
+                                <option value="vegetarian">Vegetarian</option>
+                                <option value="vegan">Vegan / dairy-free</option>
+                                <option value="gluten-free">Gluten-free</option>
+                                <option value="nut-free">Nut-free</option>
+                                <option value="alcohol-free">Alcohol-free only</option>
+                                <option value="other">Other (specify below)</option>
+                            </select>
+                            <i class="ti ti-leaf input-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="field-group" style="margin-bottom:0;">
+                        <label for="notes">Special Requests or Notes</label>
+                        <div class="input-wrap">
+                            <textarea id="notes" placeholder="Allergies, event vibe, surprise instructions, favourite flavours, etc."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-nav">
+                <button class="btn-back" onclick="goStep(2)"><i class="ti ti-arrow-left"></i> Back</button>
+                <button class="btn-next" onclick="goStep(4)">Review &amp; Confirm <i class="ti ti-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="form-panel" id="panel4">
+            <div class="panel-card">
+                <div class="panel-head">
+                    <div class="panel-icon" style="background:var(--green);"><i class="ti ti-check"></i></div>
+                    <div><h2>Confirm Booking</h2><p>Review everything before we lock it in</p></div>
+                </div>
+                <div class="panel-body">
+                    <div id="reviewTable" style="margin-bottom:20px;"></div>
+                    <div class="policy-note">
+                        <i class="ti ti-info-circle"></i>
+                        <p>By confirming, you agree to the <a href="#">Booking Policy</a>. Cancellations must be made at least 24 hours in advance. Late cancellations or no-shows may incur a fee.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-nav">
+                <button class="btn-back" onclick="goStep(3)"><i class="ti ti-arrow-left"></i> Back</button>
+                <button class="btn-next btn-confirm" id="confirmBtn" onclick="confirmReservation()"><i class="ti ti-check"></i> Confirm Booking</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="summary-card">
+            <div class="summary-head"><i class="ti ti-clipboard-list"></i><h3>Booking Summary</h3></div>
+            <div class="summary-body">
+                <div class="summary-row"><span class="sum-key">Name</span><span class="sum-val" id="sum-name"><em class="empty">—</em></span></div>
+                <div class="summary-row"><span class="sum-key">Guests</span><span class="sum-val" id="sum-guests">2 guests</span></div>
+                <div class="summary-row"><span class="sum-key">Occasion</span><span class="sum-val" id="sum-occasion">Casual</span></div>
+                <div class="summary-row"><span class="sum-key">Date</span><span class="sum-val" id="sum-date"><em class="empty">—</em></span></div>
+                <div class="summary-row"><span class="sum-key">Time</span><span class="sum-val" id="sum-time"><em class="empty">—</em></span></div>
+                <div class="summary-row"><span class="sum-key">Setup</span><span class="sum-val" id="sum-seating"><em class="empty">—</em></span></div>
+                <div class="summary-row"><span class="sum-key">Add-ons</span><span class="sum-val" id="sum-addons"><em class="empty">None</em></span></div>
+                <div class="summary-total"><span>Add-ons Total</span><strong id="sum-total">₦0</strong></div>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <h4>Find Me</h4>
+            <div class="info-item"><i class="ti ti-map-pin"></i><span>Lagos, Nigeria</span></div>
+            <div class="info-item"><i class="ti ti-phone"></i><span>+234 801 234 5678</span></div>
+            <div class="info-item"><i class="ti ti-mail"></i><span>godswill@beverageartist.ng</span></div>
+            <div class="info-item"><i class="ti ti-clock"></i><span>Mon – Sat, 9am – 9pm</span></div>
+        </div>
+
+        <div class="info-card">
+            <h4>Need Help?</h4>
+            <div class="info-item"><i class="ti ti-users"></i><span>Planning for 20+ guests? <a href="index.html#contact" style="color:var(--burgundy);font-weight:700;">Get in touch</a> for a custom arrangement.</span></div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ══ FOOTER (same as home) ══ -->
+<footer>
+    <div class="footer__top">
+        <div class="footer__brand">
+            <a href="index.html#home" class="footer__logo">GODSWILL</a>
+            <p class="footer__tagline">Coffee barista &amp; mixologist based in Lagos, Nigeria. Crafting unforgettable beverage experiences since 2019.</p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social" aria-label="Instagram">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg>
+                </a>
+                <a href="#" class="footer__social" aria-label="TikTok">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.73a8.17 8.17 0 0 0 4.77 1.52V6.8a4.85 4.85 0 0 1-1-.11z"/></svg>
+                </a>
+                <a href="#" class="footer__social" aria-label="Twitter">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer__col">
+            <h4>Navigate</h4>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#menu">Menu</a></li>
+                <li><a href="index.html#testimonials">Reviews</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__col">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="bookings.html">Book a Session</a></li>
+                <li><a href="index.html#contact">Private Events</a></li>
+                <li><a href="index.html#contact">Wedding Catering</a></li>
+                <li><a href="index.html#contact">Café Consultation</a></li>
+                <li><a href="index.html#contact">Cocktail Classes</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__col">
+            <h4>Drinks</h4>
+            <ul>
+                <li><a href="index.html#menu">Espresso Drinks</a></li>
+                <li><a href="index.html#menu">Cold Brews</a></li>
+                <li><a href="index.html#menu">Mocktails</a></li>
+                <li><a href="index.html#menu">Cocktails</a></li>
+                <li><a href="index.html#menu">Milkshakes</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <p>&copy; 2026 Godswill — Beverage Artist. All rights reserved.</p>
+        <div class="footer__terms">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
